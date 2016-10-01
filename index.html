@@ -78,6 +78,36 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
+        <!-- Image lightbox -->
+
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                <div class="row">
+                    <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+                    </a>
+                    <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
+                    </a>
+                    <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+                    </a>
+                    <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+                    </a>
+                    <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- blah -->
         <h1>MIT Kickboxing Club</h1>
       <p>The MIT Kickboxing Club is a MIT Club Sport for those interested in
 all levels of kickboxing.</p>
@@ -107,5 +137,11 @@ skills in order to work up to sparring. </p>
     <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.0.0/ekko-lightbox.js"></script>
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+      });
+    </script>
   </body>
 </html>
