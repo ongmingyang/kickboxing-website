@@ -82,6 +82,13 @@ function getCurrentUri()
 
     </div> <!-- /container -->
 
+    <footer class="footer">
+      <div class="container text-center">
+        <p class="text-muted">Questions? Email us at
+<a>kickboxing-officers@mit.edu</a></p>
+      </div>
+    </footer>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
